@@ -9,11 +9,9 @@ namespace OdeToFood.Web.Controllers
 {
     public class HomeController : Controller
     {
+        //helllo this comment is to test the git command shell
         IRestaurantData db;
-        public HomeController(IRestaurantData db)
-        {
-            this.db = db;
-        }
+        public HomeController(IRestaurantData db) => this.db = db;
         public ActionResult Index()
         {
             var model = db.GetAll();
