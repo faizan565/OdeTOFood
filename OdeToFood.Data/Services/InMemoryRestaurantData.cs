@@ -16,6 +16,12 @@ namespace OdeToFood.Data.Services
                 new Restaurant { Id = 4, Name = "pizza max", Cuisine = CuisineType.Frence},
             };
         }
+
+        public Restaurant Get(int id)
+        {
+            return restaurants.FirstOrDefault(r => r.Id == id);
+        }
+
         IEnumerable<Restaurant> IRestaurantData.GetAll(){
             return restaurants.OrderBy(r => r.Name);
         }
