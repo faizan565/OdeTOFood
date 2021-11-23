@@ -11,6 +11,7 @@ namespace OdeToFood.Data.Services
         IEnumerable<Restaurant> GetAll();
         Restaurant Get(int id);
         void Add(Restaurant restaurant);
-        //void Delete(int id);
+        void Update(Restaurant restaurant);
+        void Delete(Restaurant restaurant);
     }
 }

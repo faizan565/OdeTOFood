@@ -28,11 +28,20 @@ namespace OdeToFood.Data.Services
             return restaurants.FirstOrDefault(r => r.Id == id);
         }
 
-        //public void Delete(int id)
-        //{
-        //    var itemToRemove = restaurants.Single(r => r.Id == id);
-        //    restaurants.Remove(itemToRemove);
-        //}
+        public void Update(Restaurant restaurant)
+        {
+            var existing = Get(restaurant.Id);
+            if (existing != null) {
+                existing.Name = restaurant.Name;
+                existing.Cuisine = restaurant.Cuisine;
+            }
+        }
+
+        public void Delete(Restaurant restaurant)
+        {
+            var itemToRemove = Get(restaurant.Id);
+            restaurants.Remove(itemToRemove);
+        }
 
         IEnumerable<Restaurant> IRestaurantData.GetAll(){
             return restaurants.OrderBy(r => r.Name);
