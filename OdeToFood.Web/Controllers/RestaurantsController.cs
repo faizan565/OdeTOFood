@@ -43,7 +43,7 @@ namespace OdeToFood.Web.Controllers
             var model = db.Get(id);
             if (model == null)
             {
-                return HttpNotFound();
+                return View("NotFound");
             }
             return View(model);
         }
