@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("OdeToFood.Data")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1973a315-18d6-493f-9466-28c95f756f13")]
+[assembly: Guid("e71e4721-948c-4976-96b4-6708d0154622")]
 
 // Version information for an assembly consists of the following four values:
 //
